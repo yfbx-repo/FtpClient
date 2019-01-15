@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/d_24"
+    android:background="@drawable/corner_4_solid_white"
+    android:elevation="@dimen/d_4"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/dialogEditTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/d_10"
+        android:textColor="@color/white"
+        tools:text="新建文件夹" />
+
+    <EditText
+        android:id="@+id/dialogEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d_24"
+        android:background="@drawable/line_bottom_light_gray"
+        android:digits="@string/input_en_word"
+        android:hint="@string/pls_input_dir_name"
+        android:padding="@dimen/d_10"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/font_dark"
+        android:textSize="@dimen/s_14" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|end"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/dialogEditCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d_16"
+            android:text="@string/cancel"
+            android:textSize="@dimen/s_12" />
+
+        <TextView
+            android:id="@+id/dialogEditOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d_16"
+            android:text="@string/ok"
+            android:textColor="@color/font_dark"
+            android:textSize="@dimen/s_12" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

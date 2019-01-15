@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d_10"
+            android:text="@string/ip_" />
+
+        <EditText
+            android:id="@+id/ipTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/font_dark"
+            android:textSize="@dimen/s_16"
+            tools:text="172.26.0.226" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_1"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d_10"
+            android:text="@string/port_" />
+
+        <EditText
+            android:id="@+id/portTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/font_dark"
+            android:textSize="@dimen/s_16"
+            tools:text="21" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_16"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d_10"
+            android:text="@string/download_path_" />
+
+        <TextView
+            android:id="@+id/downloadPathTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/font_dark"
+            android:textSize="@dimen/s_16"
+            tools:text="/sdcard/ftp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/settingOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d_48"
+        android:background="@drawable/round_solid_primary"
+        android:minHeight="@dimen/d_40"
+        android:text="@string/ok"
+        android:textColor="@color/white" />
+
+</LinearLayout>
